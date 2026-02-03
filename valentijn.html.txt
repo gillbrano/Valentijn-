@@ -1,0 +1,82 @@
+valentijn.html
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>Een vraag voor jou 💖</title>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+h1 {
+    color: #e63946;
+}
+p {
+    font-size: 18px;
+}
+button {
+    font-size: 18px;
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.yes {
+    background-color: #e63946;
+    color: white;
+}
+.no {
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+    <h1>Liefste 💖</h1>
+    <p>
+        Sinds jij in mijn leven bent, is alles mooier.<br><br>
+        Daarom heb ik één belangrijke vraag…
+    </p>
+    <h2>Wil jij mijn Valentijn zijn? 💘</h2>
+
+    <button class="yes" onclick="yesClick()">JA ❤️</button>
+    <button class="no" onclick="noClick()">Nee 🙈</button>
+</div>
+
+<script>
+function yesClick() {
+    document.body.innerHTML = `
+        <div class="card">
+            <h1>YES 😍</h1>
+            <p>
+                Ik wist het 💕<br><br>
+                Ik hou van jou.<br>
+                Fijne Valentijn ❤️
+            </p>
+        </div>
+    `;
+}
+
+function noClick() {
+    alert("Dat antwoord accepteren we niet 😜 Probeer opnieuw!");
+}
+</script>
+</body>
+</html>
